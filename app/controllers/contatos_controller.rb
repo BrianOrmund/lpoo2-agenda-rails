@@ -1,3 +1,16 @@
+# Esta é a classe para o controller Contatos
+#
+# Cada método dessa classe implementa uma ação do CRUD
+# (ou algum suporte a ela).
+#
+# - index: lista os contatos (R)
+# - show: exibe um contato (R)
+# - new: instancia um novo contato (C)
+# - create: cria o contato instanciado no model (C)
+# - edit: exibe o form para editar um contato (U)
+# - update: atualiza o contato no model (U)
+# - destroy: deleta um contato no model (D)
+
 class ContatosController < ApplicationController
 
     def index

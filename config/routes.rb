@@ -4,6 +4,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
+  # Página inicial: action index do controller contatos
   root "contatos#index"
+
+  # Mapeia as rotas do CRUD para a entidade Contatos
   resources :contatos
 end
