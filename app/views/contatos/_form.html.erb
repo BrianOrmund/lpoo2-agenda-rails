@@ -1,0 +1,21 @@
+<%= form_with model: contato do |form| %>
+    <div>
+        <%= form.label :nome %><br>
+        <%= form.text_field :nome %>
+        <% contato.errors.full_messages_for(:nome).each do |msg| %>
+            <div><%= msg %></div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.label :telefone %><br>
+        <%= form.text_field :telefone %><br>
+        <% contato.errors.full_messages_for(:telefone).each do |msg| %>
+            <div><%= msg %></div>
+        <% end %>
+    </div>
+
+    <div>
+        <%= form.submit %>
+    </div>
+<% end %>

@@ -1,0 +1,18 @@
+<h1>Contatos</h1>
+
+<p><%= link_to "Novo Contato", :action => :new %>
+
+<ul>
+    <% @contatos.each do |contato| %>
+        <li>
+            <%= link_to contato.nome, contato %>: <%= contato.telefone %>
+            [<%= link_to "Alterar", edit_contato_path(contato) %>]
+            [<%= link_to "Excluir",
+                contato_path(contato),
+                data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Tem certeza?"
+                } %>]
+        </li>
+    <% end %>
+</ul>
