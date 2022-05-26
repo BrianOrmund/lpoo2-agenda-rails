@@ -1,24 +1,7 @@
-# README
+# Exemplo de aplicação Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um exemplo da aplicação de agenda de contatos implementado em Ruby on Rails.
 
-Things you may want to cover:
+Esta é uma aplicação CRUD bem básica, apenas para demonstrar como o CRUD pode ser feito no Ruby on Rails.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Para mais instruções sobre como iniciar uma nova aplicação Rails ou como obter mais informações sobre a framework, visite https://guides.rubyonrails.org/getting_started.html
