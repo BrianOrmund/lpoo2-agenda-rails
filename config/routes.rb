@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   # Mapeia as rotas do CRUD para a entidade Contatos
   resources :contatos
+  resources :alunos
 end

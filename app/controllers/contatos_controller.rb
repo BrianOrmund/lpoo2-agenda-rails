@@ -55,4 +55,8 @@ class ContatosController < ApplicationController
     
         redirect_to root_path, status: :see_other
     end
+
+    def bla
+        redirect_to :action => :new
+    end
 end
