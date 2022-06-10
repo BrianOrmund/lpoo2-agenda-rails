@@ -6,21 +6,25 @@
     contato e de editar contato.
 %>
 
+
+
+
+
 <%# Este form builder constroi um form com os dados do model %>
-<%= form_with model: contato do |form| %>
-    <div>
+<%= form_with model: aluno do |form| %>
+    <div style>
         <%= form.label :nome %><br>
         <%= form.text_field :nome %>
         <%# Mensagem de erro embutida do Rails %>
-        <% contato.errors.full_messages_for(:nome).each do |msg| %>
+        <% aluno.errors.full_messages_for(:nome).each do |msg| %>
             <div><%= msg %></div>
         <% end %>
     </div>
 
     <div>
-        <%= form.label :telefone %><br>
-        <%= form.text_field :telefone %><br>
-        <% contato.errors.full_messages_for(:telefone).each do |msg| %>
+        <%= form.label :email %><br>
+        <%= form.text_field :email %><br>
+        <% aluno.errors.full_messages_for(:email).each do |msg| %>
             <div><%= msg %></div>
         <% end %>
     </div>

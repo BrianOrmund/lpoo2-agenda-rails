@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # Página inicial: action index do controller contatos
-  root "contatos#index"
+  root "alunos#index"
 
   # Mapeia as rotas do CRUD para a entidade Contatos
-  resources :contatos
+  resources :professores
   resources :alunos
 end

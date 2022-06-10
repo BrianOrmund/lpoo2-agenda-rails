@@ -42,7 +42,7 @@ class AlunosController < ApplicationController
     def update
         @aluno = Aluno.find(params[:id])
 
-        if @aluno.update(nome: params[:Aluno][:nome], telefone: params[:Aluno][:telefone])
+        if @aluno.update(nome: params[:aluno][:nome], email: params[:aluno][:email])
             redirect_to @aluno
         else
             render :edit, status: :unprocessable_entity
